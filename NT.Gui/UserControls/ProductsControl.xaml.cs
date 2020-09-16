@@ -1,4 +1,5 @@
-﻿using NT.ViewModels.ViewModels;
+﻿using NT.Logging;
+using NT.ViewModels.ViewModels;
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -31,9 +32,9 @@ namespace NT.Gui.UserControls
                     await viewModel.InitializeAsync();
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                throw;
+                await Logger.LogAsync(ex);
             }
         }
     }
