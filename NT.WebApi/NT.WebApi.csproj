@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>3cbfa6fd-ec33-43ba-baa6-e8ae3d759184</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NT.DataAccess\NT.DataAccess.csproj" />
+    <ProjectReference Include="..\NT.Entities\NT.Entities.csproj" />
+    <ProjectReference Include="..\NT.Gui\NT.Gui.csproj" />
+  </ItemGroup>
+
+
+</Project>
